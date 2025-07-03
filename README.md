@@ -46,3 +46,18 @@ Keyloggers are malicious programs that record keyboard inputs to steal sensitive
    ```bash
    git clone https://github.com/yourusername/keylogger-detector.git
    cd keylogger-detector
+---
+
+2. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Run the detector:
+
+   ```bash
+   python detector.py
+   ```
+
+---
