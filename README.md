@@ -1,3 +1,8 @@
+Here is a professional and beginner-friendly `README.md` for the **Keylogger Detector** project:
+
+---
+
+````markdown
 # 🛡️ Keylogger Detector
 
 A lightweight Python-based tool that detects and blocks potential keylogger activity on a local system using process scanning and signature-based detection.
@@ -46,7 +51,7 @@ Keyloggers are malicious programs that record keyboard inputs to steal sensitive
    ```bash
    git clone https://github.com/yourusername/keylogger-detector.git
    cd keylogger-detector
----
+````
 
 2. Install dependencies:
 
@@ -61,3 +66,63 @@ Keyloggers are malicious programs that record keyboard inputs to steal sensitive
    ```
 
 ---
+
+## ⚙️ How It Works
+
+1. **Process Scanner** – Iterates through running processes.
+2. **Signature Matcher** – Compares process names and known behaviors.
+3. **Heuristic Checker** – Flags hidden or suspicious processes (e.g., no window, long runtime).
+4. **Response** – Logs the result and optionally terminates flagged processes.
+
+---
+
+## 📂 Project Structure
+
+```
+keylogger-detector/
+│
+├── signatures.json         # Known keylogger process names/behaviors
+├── detector.py             # Main detection script
+├── logger.py               # Logging functionality
+├── utils.py                # Helper functions
+├── requirements.txt        # Python dependencies
+└── README.md               # Project documentation
+```
+
+---
+
+## 📖 Example Output
+
+```bash
+[!] Suspicious process detected:
+    Name: keylog32.exe
+    PID: 1432
+    Action: Terminated
+
+[+] Scan complete. 1 threat removed. Log saved to logs/2025-07-03.log
+```
+
+---
+
+## 🧪 Disclaimer
+
+This tool is for **educational and ethical purposes only**. Do not use it to target or reverse-engineer legitimate software without proper consent.
+
+---
+
+## 👨‍💻 Author
+
+* **Your Name** – [@HR10J44T](https://github.com/HR10J44T)
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
+
+```
+
+---
+
+Let me know if you’d like a simple GUI version or if you want the actual code for this project as well!
+```
