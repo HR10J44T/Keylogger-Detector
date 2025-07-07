@@ -1,8 +1,3 @@
-Here is a professional and beginner-friendly `README.md` for the **Keylogger Detector** project:
-
----
-
-````markdown
 # 🛡️ Keylogger Detector
 
 A lightweight Python-based tool that detects and blocks potential keylogger activity on a local system using process scanning and signature-based detection.
@@ -123,6 +118,3 @@ This project is licensed under the MIT License – see the [LICENSE](LICENSE) fi
 ```
 
 ---
-
-Let me know if you’d like a simple GUI version or if you want the actual code for this project as well!
-```
