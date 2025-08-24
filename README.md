@@ -101,7 +101,7 @@ Do not use it for malicious activities or reverse-engineering legitimate softwar
 
 ## 👨‍💻 Author
 
-**Your Name** – [@HR10J44T](https://github.com/HR10J44T)
+**Your Name** – Uday [@HR10J44T](https://github.com/HR10J44T)
 
 ---
 
