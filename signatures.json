@@ -1,0 +1,32 @@
+{
+  "process_names": [
+    "keylogger",
+    "keylog",
+    "klg",
+    "hookkey",
+    "winlog",
+    "winhook",
+    "logkeys",
+    "pykeylogger",
+    "spyrix",
+    "refog",
+    "ardamax",
+    "ghostpress",
+    "kidlogger",
+    "keyscrambler",
+    "keycapture",
+    "keysniffer"
+  ],
+  "cmdline_markers": [
+    "--hook",
+    "--keyboard",
+    "--keylog",
+    "keybd_event",
+    "SetWindowsHookEx",
+    "GetAsyncKeyState",
+    "XRecordEnableContext",
+    "XGrabKey",
+    "evdev"
+  ],
+  "paths": []
+}
