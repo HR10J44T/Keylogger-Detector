@@ -1,87 +1,80 @@
 # 🛡️ Keylogger Detector
 
-A lightweight Python-based tool that detects and blocks potential keylogger activity on a local system using process scanning and signature-based detection.
+A lightweight **Python-based security tool** that detects and blocks potential keylogger activity on a local system using **process scanning** and **signature-based detection**.
 
 ---
 
-## 📌 Project Description
+## 📌 Overview
 
-Keyloggers are malicious programs that record keyboard inputs to steal sensitive information like passwords and credit card numbers. This project helps detect such threats by:
+Keyloggers are malicious programs that secretly record keystrokes to steal sensitive data (like passwords & credit card numbers).
+This tool helps defend against such threats by:
 
-- Scanning running processes.
-- Matching them against known keylogger signatures.
-- Alerting the user or terminating suspicious processes.
+* 🔍 Scanning running processes
+* 🧠 Matching against **known malicious signatures** (`signatures.json`)
+* 🚨 Alerting the user or terminating suspicious processes
+* 📄 Logging results for auditing and security review
 
 ---
 
 ## 🎯 Features
 
-- 🔍 Real-time process scanning.
-- 🧠 Signature-based detection for common keyloggers.
-- 🚫 Option to terminate suspicious processes.
-- 📄 Log generation for auditing and review.
-- 🔐 Lightweight and fully offline – no data leaves your system.
+* 🔍 **Real-time process scanning** using `psutil`
+* 🧠 **Signature-based detection** against known keyloggers
+* 🚫 Option to **terminate suspicious processes** automatically
+* 📄 **Log generation** (with timestamped log files in `/logs/`)
+* ⚡ **Lightweight & offline** – no external data sharing
 
 ---
 
 ## 🧠 Concepts Used
 
-- Process and memory analysis using `psutil`.
-- Static signature matching (name, behavior).
-- Basic heuristic checks for keylogging behavior.
-- Secure logging and user alerting.
+* Process & memory analysis (`psutil`)
+* Static signature matching (name, behavior)
+* Basic heuristic checks (hidden processes, runtime anomalies)
+* Secure logging (`logger.py`)
+* Utility-based process handling (`utils.py`)
+
+---
+
+## ⚙️ Project Structure
+
+```
+keylogger-detector/
+│
+├── detector.py          # Main detection script
+├── logger.py            # Logging functionality (file + console)
+├── utils.py             # Safe process info extraction
+├── signatures.json      # Known malicious process names
+├── requirements.txt     # Python dependencies
+└── logs/                # Auto-generated log files
+```
 
 ---
 
 ## 🚀 Getting Started
 
-### Prerequisites
+### ✅ Prerequisites
 
-- Python 3.7+
-- OS: Windows / Linux / macOS
+* Python **3.7+**
+* OS: **Windows / Linux / macOS**
 
-### Installation
+### 📥 Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/keylogger-detector.git
-   cd keylogger-detector
-````
+```bash
+# Clone the repo
+git clone https://github.com/yourusername/keylogger-detector.git
+cd keylogger-detector
 
-2. Install dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Run the detector:
-
-   ```bash
-   python detector.py
-   ```
-
----
-
-## ⚙️ How It Works
-
-1. **Process Scanner** – Iterates through running processes.
-2. **Signature Matcher** – Compares process names and known behaviors.
-3. **Heuristic Checker** – Flags hidden or suspicious processes (e.g., no window, long runtime).
-4. **Response** – Logs the result and optionally terminates flagged processes.
-
----
-
-## 📂 Project Structure
-
+# Install dependencies
+pip install -r requirements.txt
 ```
-keylogger-detector/
-│
-├── signatures.json         # Known keylogger process names/behaviors
-├── detector.py             # Main detection script
-├── logger.py               # Logging functionality
-├── utils.py                # Helper functions
-├── requirements.txt        # Python dependencies
-└── README.md               # Project documentation
+
+### ▶️ Usage
+
+Run the detector:
+
+```bash
+python detector.py
 ```
 
 ---
@@ -94,27 +87,24 @@ keylogger-detector/
     PID: 1432
     Action: Terminated
 
-[+] Scan complete. 1 threat removed. Log saved to logs/2025-07-03.log
+[+] Scan complete. 1 threat removed. Log saved to logs/2025-08-24_201045.log
 ```
 
 ---
 
 ## 🧪 Disclaimer
 
-This tool is for **educational and ethical purposes only**. Do not use it to target or reverse-engineer legitimate software without proper consent.
+This tool is for **educational & ethical purposes only**.
+Do not use it for malicious activities or reverse-engineering legitimate software.
 
 ---
 
 ## 👨‍💻 Author
 
-* **Your Name** – [@HR10J44T](https://github.com/HR10J44T)
+**Your Name** – [@HR10J44T](https://github.com/HR10J44T)
 
 ---
 
 ## 📜 License
 
-This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
-
-```
-
----
+This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
